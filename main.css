@@ -1,0 +1,106 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#mdiv
+{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/free-vector/colourful-watercolour-texture_1048-11773.jpg");  
+}
+.bg-pan-top {
+	-webkit-animation: bg-pan-top 15s both;
+	        animation: bg-pan-top 15s both;
+}
+
+ @keyframes bg-pan-top {
+    0% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
+  @keyframes bg-pan-top {
+    0% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
+
+  .topleft
+  {
+    height: 180px;   
+    width: 100%;
+    padding-right: 180px;
+    padding-bottom: 70px;
+    opacity: 500%;
+    background-blend-mode: multiply;
+
+
+  }
+  
+
+.toolbar
+{
+    display: flex;
+    justify-content: right;
+    padding: 20px 20px 20px;
+    background-color:transparent;
+    text-decoration: underline 2px;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+li 
+{
+    margin:30px
+
+}
+.SignUp
+{
+    font-size: 35px;
+    text-align: center;
+    background-color: darkgray;
+    border-width: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.SignUp:hover
+{
+    transform:scale(1.1);
+    transition:ease-in;
+    transition-duration: 0.5s;
+    box-shadow: 10px 5px 8px 1px;
+}
+
+img{
+    border-radius: 35px;
+    mix-blend-mode:multiply ;
+    height: 250px;
+    width: 35%;
+    padding-bottom: 30px;
+}
+#wish
+{
+    font-size: 20px;
+    text-decoration: underline 15px;
+    color: rrgb(90, 17, 17);
+    font-weight: bolder;   
+}
+/* #batman
+{
+    height: 70px;
+    width: 70px;
+    
+} */

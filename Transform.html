@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Properties</title>
+    <style>
+        .div1
+        {
+            height: 100px;
+            width: 100px;
+            background-color: grey;
+            transition-duration: 3s;
+            margin: 100px;
+        }
+
+        .div1:hover
+    {
+            transform: translateX(500px);
+            transform: translateY(500px);
+            transform: translate(500px,500px);
+            transform: rotate(10000deg);
+            transform: rotate3d(0,100,90,90deg);
+            transform: scale(1.5);
+            transform: scaleX(2.9);
+            transform: scaleY(1.9);
+            transform: scale(1.5,2.8);
+            transform: skew(5000deg);
+            transform: skewX(75deg);
+            transform: skewY(75deg);
+            transform: skew(75deg,80deg);
+            transform: matrix3d();
+        }   
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+
+    </div>
+    
+</body>
+</html>

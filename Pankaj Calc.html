@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Pankaj Sawankar" content="this is made project on calculator"
+	<title>My Calculator</title>
+
+	<style type="text/css">
+		
+		*{
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+		}
+
+		.mdiv
+		{
+			height: 100vh;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			top: 0px;
+			display: flex;
+			background-image: url("https://i.pinimg.com/originals/8c/43/64/8c43645fe8d0ac164a6925448be32858.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.calc
+		{
+			height: 400px;
+			width: 300px;
+			//background-color: white;
+			padding-left: 25px;
+			border-radius: 10px;
+			align-items: center;
+			box-sizing: border-box;
+			border: 1px solid gray;
+			box-shadow: 10px 5px 5px gray;
+			justify-content: center;
+			backdrop-filter: blur(3px);
+					
+		}
+		.output
+		{
+			width: 100%;
+			margin-right: 75px ;
+		}
+		.op
+		{
+			
+			text-align: right;
+			font-size: 30px;
+			background-color: transparent;
+			color: black;
+			border:none;
+			outline: 0px;
+			cursor: text;
+			width: 250px;
+			height: 85px;
+		}
+
+		.button
+		{
+			
+			height: 50px;
+			width: 60px;
+			margin-top: 8px;
+			border-radius: 55px;
+			border: none;
+			font-size: 20px;
+			transition-duration: 0.9s;
+			cursor: pointer;
+
+		}
+		.button:hover
+		{
+			transform: scale(0.9);
+			background-color: gray;
+			box-shadow: 2px 10px 20px black
+		}
+		.button:active 
+		{
+			background-color: #3e8e41;
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
+		}
+		
+		#operator
+		{
+			color: rgb(12, 12, 12);
+			font-weight: bolder;
+			background-color: rgb(83, 81, 81);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="mdiv">
+		<div class="calc">
+			<form autocomplete="off">
+				<div class="output">
+					<input type="text" name="op" class="op" autofocus>
+				</div>
+
+				<div>
+					<input type="button" name="Ac" value="Ac" onclick="op.value=' '" class="button">
+					<input type="button" name="C" value="C" onclick="op.value= Math.floor((op.value)/10)" class="button">
+					<input type="button" name="mod" value="%" onclick="op.value+='%'" class="button" id="operator">
+					<input type="button" name="operator" value="/" onclick="op.value+='/'" class="button" id="operator">
+				</div>
+
+				<div>
+					<input type="button" name="number" value="7" onclick="op.value += '7'" class="button">
+					<input type="button" name="number" value="8" onclick="op.value += '8'" class="button">
+					<input type="button" name="number" value="9" onclick="op.value += '9'" class="button">
+					<input type="button" name="operator" value="x" onclick="op.value += '*'" class="button" id="operator">
+				</div>
+
+				<div>
+					<input type="button" name="number" value="4" onclick="op.value += '4'" class="button">
+					<input type="button" name="number" value="5" onclick="op.value += '5'" class="button">
+					<input type="button" name="number" value="6" onclick="op.value += '6'" class="button">
+					<input type="button" name="operator" value="-" onclick="op.value += '-'" class="button" id="operator" >
+				</div>
+
+				<div>
+					<input type="button" name="number" value="1" onclick="op.value += '1'" class="button">
+					<input type="button" name="number" value="2" onclick="op.value += '2'" class="button">
+					<input type="button" name="number" value="3" onclick="op.value += '3'" class="button">
+					<input type="button" name="operator" value="+" onclick="op.value += '+'" class="button" id="operator">
+				</div>
+
+				<div>
+					<input type="button" name="number" value="00" onclick="op.value += '00'" class="button">
+					<input type="button" name="number" value="0" onclick="op.value += '0'" class="button">
+					<input type="button" name="." value="." onclick="op.value += '.'" class="button">
+					<input type="button" name="operator" value="=" onclick="op.value = eval(op.value)" class="button" id="operator">
+
+				</div>
+
+				
+			</form>
+		</div>
+	</div>
+
+</body>
+</htmoperator>
